@@ -15,8 +15,10 @@
   
 #### 1. 시작 화면
 - STTCode.ipnynb / website-> page1.html / QRcode
-  
-- 음성인식기에 "하이, 하하하"가 인식되거나 QR코드를 찍을 경우 실행됨.
+- STT 기술로, Whisper 이용
+- whisper model 설정, 업로드 받은 파일을 텍스트로 변환
+- 언어를 한국어로 설정
+- 음성인식기에서 인식한 텍스트에서 "하이, 하하하"가 인식되거나 QR코드를 찍을 경우 실행됨.
 - 웹사이트의 의의를 보여주기 위해 투명 페트병의 중요성과 분리수거 방법이 포함.
 - "적립(save)", "설명(manual)" 버튼을 누르면 해당 페이지 이동.
   
@@ -40,6 +42,7 @@
 
 #### 3. 적립 화면
 - TTScode.ipynb / website-> page4.html
+- 
 
 - 최근 적립 포인트(point)와 총 누적 포인트(totalpoint)를 표기함.
 - tts기능을 통해 사용이 성공적으로 종료되었음을 알려줌. 
@@ -51,5 +54,9 @@
 - TTScode.ipynb / website-> page3.html
 
 - tts기능을 통해 웹사이트 사용 방법을 설명함.
+- tts 기술은 Google의 gtts 라이브러리 활용
+- 사용 메뉴얼 텍스트 총 9개로 분류, 반복문을 통해, 오디오로 저장
+- 반복문을 통해, 저장된 오디오 파일을 자동 재생
+- time.sleep()를 통해 오디오 재생 간격 설정
   
   ![image](https://github.com/sojeong26/hahaha/assets/164765964/c8ed5809-5925-4d48-a0ee-76b7c1e672f7)
