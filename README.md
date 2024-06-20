@@ -27,7 +27,8 @@
 - 23-2_DSL_Modeling_Waste_Plastic_Bottle_Object_Detection / website-> page1-2.html, page2.html 
 
 - 키패드를 이용하여 휴대폰 번호 입력.
-- 카메라 화면에 페트병을 비춤으로써 기계 투입을 가정함.
+- camera() 함수에 페트병을 비춤으로써 기계 투입을 가정함.
+- captureImage() 함수로 이미지 캡처 후
 - "투입 완료 (complete)" 버튼을 누르면 AI가 이미지 분석 시작하여 분리수거 가능여부 판별함.
     
 - 페트병의 색, 라벨 여부 판별하여 라벨이 없는 투명 페트병일 경우에만 투입 종료를 누르도록 함.
@@ -40,7 +41,7 @@
 #### 3. 적립 화면
 - TTScode.ipynb / website-> page4.html
 
-- 최근 적립 포인트와 총 누적 포인트를 표기함.
+- 최근 적립 포인트(point)와 총 누적 포인트(totalpoint)를 표기함.
 - tts기능을 통해 사용이 성공적으로 종료되었음을 알려줌. 
 
 ![image](https://github.com/sojeong26/hahaha/assets/164765964/5866b928-b661-40ca-bccd-8cd22cb394d8)
