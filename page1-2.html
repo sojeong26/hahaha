@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전화번호 입력</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>회원정보를 입력해주세요.</h1>
+        <p>insert your phone number and press the complete button</p>
+    </header>
+    <div class="container">
+        <div id="keypad">
+            <input type="text" id="phone" name="phone" readonly>
+            <div class="keypad-row">
+                <button class="keypad-button" onclick="addNumber('1')">1</button>
+                <button class="keypad-button" onclick="addNumber('2')">2</button>
+                <button class="keypad-button" onclick="addNumber('3')">3</button>
+            </div>
+            <div class="keypad-row">
+                <button class="keypad-button" onclick="addNumber('4')">4</button>
+                <button class="keypad-button" onclick="addNumber('5')">5</button>
+                <button class="keypad-button" onclick="addNumber('6')">6</button>
+            </div>
+            <div class="keypad-row">
+                <button class="keypad-button" onclick="addNumber('7')">7</button>
+                <button class="keypad-button" onclick="addNumber('8')">8</button>
+                <button class="keypad-button" onclick="addNumber('9')">9</button>
+            </div>
+            <div class="keypad-row">
+                <button class="keypad-button" onclick="addNumber('0')">0</button>
+                <button class="keypad-button" onclick="clearNumber()">del</button>
+            </div>
+        </div>
+        <br>
+        <a href="page2.html" class="button">입력 완료(complete)</a>
+    </div>
+
+    <script>
+        var phoneInput = document.getElementById('phone');
+
+        function addNumber(number) {
+            phoneInput.value += number;
+        }
+
+        function clearNumber() {
+            phoneInput.value = '';
+        }
+    </script>
+</body>
+</html>
