@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트 적립</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const totalpoint = localStorage.getItem("totalpoint") || 0;
+            const point = 10;
+
+            localStorage.setItem("totalpoint", parseInt(totalpoint) + point);
+
+            document.getElementById("point").innerText = point;
+            document.getElementById("totalpoint").innerText = localStorage.getItem("totalpoint");
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>이용해주셔서 감사합니다!</h1>
+        <p> Thank you! </p>
+    </header>
+    <div class="container">
+        <p>이번에 적립된 포인트: <span id="point">0</span></p>
+        <p>총 누적 포인트: <span id="totalpoint">0</span></p>
+        <a href="page1.html" class="button">첫 페이지로 이동 (back)</a>
+    </div>
+</body>
+</html>

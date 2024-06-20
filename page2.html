@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페트병 확인</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function Camera() {
+            const video = document.getElementById('video');
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+                    video.srcObject = stream;
+                    video.play();
+                });
+            }
+        }
+
+        function captureImage() {
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('canvas');
+            const context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            document.getElementById('result').innerText = "사진 분석 중...";
+            setTimeout(function() {
+                document.getElementById('result').innerText = "이 페트병은 분리수거 가능합니다.";
+            }, 2000);
+        }
+    </script>
+</head>
+<body onload="Camera()">
+    <header>
+        <h1>페트병을 투입구에 넣어주세요.</h1>
+        <p>place on empty bottle into the slot.</p>
+    </header>
+    <div class="container">
+        <video id="video" width="640" height="400" autoplay></video>
+        <br>
+        <button class="button" onclick="captureImage()">투입 완료 (complete)</button>
+        <canvas id="canvas" width="640" height="400" style="display:none;"></canvas>
+        <p id="result"></p>
+        <a href="page4.html" class="button">적립 종료 (finish)</a>
+    </div>
+</body>
+</html>

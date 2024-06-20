@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+header {
+    background-color: #817ad0;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #817ad0;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.button:hover {
+    background-color: #817ad0;
+}
+
+.container {
+    max-width: auto;
+    margin: 30px auto 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/*img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    float: left;
+} */
+
+.explain p{
+    font-weight: bold;
+    font-size: 22px;
+    text-align: left;
+}
+
+.explain .subtitle{
+    font-size: 15px;
+    text-align: left;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+}
+
+/*
+.method {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.method img {
+    max-width: 60%;
+    height: auto; 
+}
+
+.method.left {
+    justify-content: flex-start;
+}
+
+.method.right {
+    justify-content: flex-end;
+}
+*/
+
+#keypad {
+    display: inline-block;
+    text-align: center;
+}
+
+#phone {
+    width: 80%;
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.keypad-row {
+    margin-bottom: 10px;
+}
+
+.keypad-button {
+    padding: 20px;
+    margin: 1px;
+    font-size: 16px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #817ad0;
+    color: white;
+    width: 60px;
+}
+
+.keypad-button:hover {
+    background-color: #817ad0;
+}
