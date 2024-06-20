@@ -63,9 +63,9 @@ p {
     text-align: left;
 }
 
-.explain subtitle{
-    font-size: 22px;
-    text-align: center;
+.explain .subtitle{
+    font-size: 15px;
+    text-align: left;
 }
 
 .image-container {
@@ -124,11 +124,11 @@ p {
     margin: 1px;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
     background-color: #817ad0;
     color: white;
-    width: auto;
+    width: 60px;
 }
 
 .keypad-button:hover {
